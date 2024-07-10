@@ -299,6 +299,19 @@ body {
     background-color: blue;
 }
 
+@media (max-width: 500px) {
+    #back {
+        margin: auto;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+        color: #eee;
+        background-color: blue;
+    }
+}
+
 #back i {
     font-size: 24px;
 }
