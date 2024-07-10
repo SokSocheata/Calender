@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon"
+        href="https://image.shutterstock.com/image-vector/february-14-calendar-icon-valentines-260nw-361616087.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="./calender.css">
+</head>
+
+
+<body>
+    <section>
+        <!-- (A) PERIOD SELECTOR -->
+        <div id="calPeriod">
+            <select id="calMonth"></select>
+            <div class="current-year" id="calYear">2024</div>
+        </div>
+
+        <!-- (B) CALENDAR -->
+        <div id="calWrap"></div>
+        
+
+        <!-- (C) EVENT FORM -->
+        <dialog id="calForm">
+            <form method="dialog">
+                <div id="evtClose">X</div>
+                <h2>CALENDAR EVENT</h2>
+                <label>Date</label>
+                <input type="text" id="evtDate" readonly>
+                <label style=" text-align: center;">Details</label>
+                <textarea id="evtTxt" required></textarea>
+
+                <input id="evtDel" type="button" value="Delete">
+                <input id="evtSave" type="submit" value="Save">
+            </form>
+        </dialog>
+    </section>
+    <section>
+        <div class="btn_year">
+            <button type="button" id="back"><i class='bx bx-chevron-left'></i>Previous</button>
+            <button type="button" id="next">Next<i class='bx bx-chevron-right'></i></button>
+        </div>
+    </section>
+    <script src="calender.js"></script>
+
+</body>
+
+</html>
